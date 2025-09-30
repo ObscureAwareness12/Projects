@@ -21,3 +21,7 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  text-align: center;
+}
+
