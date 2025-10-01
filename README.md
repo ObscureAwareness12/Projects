@@ -1,5 +1,7 @@
 # Projects
 Small and Big Projects for learning
+
+------------------------------------SOKA Jobs+Fair Website------------------------------------------ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,5 +25,16 @@ body {
 
 header {
   text-align: center;
+  padding: 2rem;
+  background: #003580; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3)
+}
+
+header h1{
+    font-size: 2.8rem;
+    color: #ffdd00;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: glow 2s infinite alternate;
 }
 
