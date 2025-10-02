@@ -55,7 +55,23 @@ header p {
     backgroud: #0057b7;
     flex-wrap: warp;
 }
+.event-info {
+    margin: 1rem;
+    font-size: 1.2rem;
+}
 
+.employers {
+    padding: 2rem;
+    background: #ffff:
+    color: #333;
+    text-align: center;
+}
+
+.employers h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #004aad;
+}
 
 
 
