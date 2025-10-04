@@ -73,6 +73,15 @@ header p {
     color: #004aad;
 }
 
+employers ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+
+
 
 
 
