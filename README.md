@@ -93,9 +93,34 @@ employers li {
     color: #000;
 }
 
+.cta {
+    padding: 2rem;
+    background: #ffdd00;
+    color: #000;
+    text-align: center;
+    font-size: 1.3rem;
+}
 
+.cta strong {
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
 
+.prep {
+    background: #fb7b25;
+    padding: 2rem;
+    text-align: center;
+}
 
+.prep h3 {
+    color: #ffdd00;
+    margin-bottom: 1rem;
+}
+
+.prep p {
+    margin: 0.5 rem 0;
+}
 
 
 
