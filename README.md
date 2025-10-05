@@ -79,7 +79,13 @@ employers ul {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
-I am 
+
+employers li {
+    background: #f5f5f5; 
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3, background 0.3;
+}
 
 
 
