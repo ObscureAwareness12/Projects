@@ -87,6 +87,11 @@ employers li {
     transition: transform 0.3, background 0.3;
 }
 
+.employers li:hover {
+    transform: scale(1.05);
+    background: #ffdd00;
+    color: #000;
+}
 
 
 
