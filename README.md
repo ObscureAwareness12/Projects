@@ -154,6 +154,36 @@ Small and Big Projects for learning
     <h1> 🚀 Soka JOBS+ Fair 🚀 </h1>
     <p>✨ Paid On-Campus Work Experience + Career Growth ✨</p>
   </header>
+  
+  <section>
+    <div>📅 <strong>Friday, Oct 3, 2025</strong></div>
+    <div>📍 <strong>Bistro Patio</strong></div>
+    <div>⏰ <strong>11:30 am – 1:30 pm</strong></div>
+  </section>
+
+  <section class="employers">
+    <h2>👀 Featuring On-Campus Employers:</h2>
+    <ul>
+      <li>Admissions</li>
+      <li>Alumni Relations</li>
+      <li>Athletics</li>
+      <li>Bon Appetit</li>
+      <li>Career Development Office</li>
+      <li>DEI</li>
+      <li>English Language Program Help Center</li>
+      <li>IT</li>
+      <li>Library</li>
+      <li>Performing Arts Center</li>
+      <li>Residential Life</li>
+      <li>Marketing & Communications</li>
+      <li>Student Activities</li>
+      <li>Leadership & Service Engagement</li>
+      <li>SUA Faculty / CAP</li>
+    </ul>
+  </section>
+
+  
+  
 </body>
 
 
