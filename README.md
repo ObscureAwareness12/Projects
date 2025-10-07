@@ -182,6 +182,11 @@ Small and Big Projects for learning
     </ul>
   </section>
 
+<section class="cta">
+  <strong>💡 Your Great First Impression Can Get You HIRED!</strong>
+  👉 Meet employers, build connections, explore jobs!
+  <div id="countdown">Countdown loading...</div> 
+</section>
   
   
 </body>
