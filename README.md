@@ -199,8 +199,29 @@ Small and Big Projects for learning
   Brought to you by SUA Career Development Office <br />
   Questions? <a href="mailto:ychoiplass@soka.edu">ychoiplass@soka.edu</a>
 </footer>
+
+<script>
+  //Simple countdown to event date
+  const countdown = document.getElementById("countdown");
+  const eventDate = new Date("Oct 3, 2025 11:30:00").getTime();
+
+  setInterval(() => {
+    const now = new Date().getTime();
+    const distance = eventDate - now;
+
+    if (distance > 0) {
+      const days = Math.floor(distance/(1000*60*60*24));
+      const hours = Math.floor((distance % (1000*60*60*24)/(1000*60*60));
+      const minutes = Math.floor((distance % (1000*60*60*24)/(1000*60));
+      countdown.innerHTML = `⏳ ${days}d ${hours}h ${minutes}m until the Fair!`;
+    } else {
+      countdown.innerHTML = "🎉 The JOBS+ Fair is happening NOW!";
+    } 
   
+  }, 1000;)
+</script>
 </body>
+</html>
 
 
 
