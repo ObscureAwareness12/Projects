@@ -187,7 +187,18 @@ Small and Big Projects for learning
   👉 Meet employers, build connections, explore jobs!
   <div id="countdown">Countdown loading...</div> 
 </section>
-  
+
+<section>
+  <h3>🔥 PREP Session: Thursday, Oct 2 @ 5 pm 🔥</h3>
+  <p>✅ Be ready. Be confident. Be YOU.</p>
+    <p>📩 Register here: <a href="https://sokannect.soka.edu/web/rsvp_boot?id=378575" target="_blank">[Prep Link]</a></p>
+    <p>📩 Jobs+ Fair info: <a href="https://sokannect.soka.edu/cdo/rsvp_boot?id=378567" target="_blank">[Fair Link]</a></p>
+</section>
+
+<footer>
+  Brought to you by SUA Career Development Office <br />
+  Questions? <a href="mailto:ychoiplass@soka.edu">ychoiplass@soka.edu</a>
+</footer>
   
 </body>
 
