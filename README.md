@@ -224,6 +224,8 @@ Small and Big Projects for learning
 </html>
 
 ------------------------------🧩 Project: Maze Solver (with Python)--------------------------------------
+import random
+
 
 
 
