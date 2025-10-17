@@ -225,7 +225,38 @@ Small and Big Projects for learning
 
 ------------------------------🧩 Project: Maze Solver (with Python)--------------------------------------
 import random
+import os
+import time
+import sys
 
+try: 
+    import msvcrt
+    def get_char():
+        return msvcrt.getch().decode('utf-8')
+    expect ImportError:
+        def get_char():
+            return input()
+# ---Constants---
+MAZE_WIDTH = 25
+MAZE_HEIGHT = 19
+
+clase Maze: 
+    """
+    This class creates and prints a text-based maze.
+    The maze is represented by a gird. Each cell in the gird can have walls
+    on its top, bottom, left, or right side. 
+    """
+
+    def__init__(self, width, height):
+        self.width = width
+        self.height = height
+        self.grid = [[{'top': True, 'bottom': True, 'left':True, 'right':True} for _ in range(width)] for _ in range(height)]
+        self.generate_maze(0,0) 
+
+        self.start_pos = (0, 0) 
+        self.end_pos = (width-1, height-1) 
+
+    def_
 
 
 
