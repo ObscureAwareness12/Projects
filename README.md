@@ -256,8 +256,26 @@ clase Maze:
         self.start_pos = (0, 0) 
         self.end_pos = (width-1, height-1) 
 
-    def_
+    def generate_maze(self, cx, cy)
+        """
+        Generates the maze using recursive backtracking algorithim.
+        It's like mouse digging tunnels randomly until it can't dig anymore,
+        then it backtracks to find a new path
+        """
+        directions = ['N', 'S', 'E', 'W']
+        random.shuffle(directions)
 
+        for direction in directions:
+            nx, ny = cx, cy 
+            if direction == 'N':
+                ny -= 1
+            elif direction == 'S':
+                ny += 1
+            elif direction == 'E':
+                nx += 1
+            elif direction == 'W':
+                nx -= 1
+        
 
 
 
