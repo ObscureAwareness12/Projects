@@ -275,6 +275,11 @@ clase Maze:
                 nx += 1
             elif direction == 'W':
                 nx -= 1
+
+          #PART 1
+          if 0 <= nx < self.width and 0 <= ny < self.height:
+              if all(self.grid[ny][nx].values()):
+              
         
 
 
