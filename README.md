@@ -294,8 +294,11 @@ clase Maze:
                     # Recursively call the function for the new cell
                     self.generate_maze(nx, ny)
               
-              
-        
+        def display(self, player=None, path=None):
+        """
+        Displays the maze in the console.
+        It prints characters to represent walls, paths, start, and end points.
+        """
 
 
 
