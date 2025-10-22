@@ -279,6 +279,21 @@ clase Maze:
           #PART 1
           if 0 <= nx < self.width and 0 <= ny < self.height:
               if all(self.grid[ny][nx].values()):
+                    if direction == 'N':
+                        self.grid[cy][cx]['top'] = False
+                        self.grid[ny][nx]['bottom'] = False
+                    elif direction == 'S':
+                        self.grid[cy][cx]['bottom'] = False
+                        self.grid[ny][nx]['top'] = False
+                    elif direction == 'E':
+                        self.grid[cy][cx]['right'] = False
+                        self.grid[ny][nx]['left'] = False
+                    elif direction == 'W':
+                        self.grid[cy][cx]['left'] = False
+                        self.grid[ny][nx]['right'] = False
+                    # Recursively call the function for the new cell
+                    self.generate_maze(nx, ny)
+              
               
         
 
