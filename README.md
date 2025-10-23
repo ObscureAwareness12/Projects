@@ -299,6 +299,7 @@ clase Maze:
         Displays the maze in the console.
         It prints characters to represent walls, paths, start, and end points.
         """
+        
 
 
 
