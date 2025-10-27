@@ -299,7 +299,104 @@ clase Maze:
         Displays the maze in the console.
         It prints characters to represent walls, paths, start, and end points.
         """
-        
+        # Clear the console screen
+        os.system('cls' if os.name == 'nt' else 'clear')
+
+        # Top border of the maze
+        print("+" + "---+" * self.width)
+
+        for y in range(self.height):
+            # Row with south walls
+            line = "|"
+            for x in range(self.width):
+                cell_char = " "
+                if player and (x, y) == (player.x, player.y):
+                    cell_char = "P"
+                elif path and (x,y) in path:
+                    cell_char = "."
+                elif (x, y) == self.start_pos:
+                    cell_char = "S"
+                elif (x, y) == self.end_pos:
+                    cell_char = "E"
+
+                if self.grid[y][x]['right']:
+                    line += f" {cell_char} |"
+                else:
+                    line += f" {cell_char}  "
+            print(line)
+
+            # Row with east/west walls
+            line = "+"
+            for x in range(self.width):
+                if self.grid[y][x]['bottom']:
+                    line += "---+"
+                else:
+                    line += "   +"
+            print(line)
+
+
+# --- Player Class ---
+  class Player:
+      """
+      This class represents the object that will move through the maze.
+      """
+      def __init__(self, x, y):
+          self.x = x
+          self.y = y
+          self.path = [(x, y)]
+
+    def move(self, direction, maze):
+        """ Moves the player and checks for walls. """
+        nx, ny = self.x, self.y
+        moved = False
+        if direction == 'w' and not maze.grid[self.y][self.x]['top']:
+            ny -= 1
+            moved = True
+        elif direction == 's' and not maze.grid[self.y][self.x]['bottom']:
+            ny += 1
+            moved = True
+        elif direction == 'a' and not maze.grid[self.y][self.x]['left']:
+            nx -= 1
+            moved = True
+        elif direction == 'd' and not maze.grid[self.y][self.x]['right']:
+            nx += 1
+            moved = True
+
+        if moved:
+            self.x, self.y = nx, ny
+            if (self.x, self.y) in self.path:
+                # If we backtrack, remove the path until that point
+                self.path = self.path[:self.path.index((self.x, self.y))+1]
+            else:
+                self.path.append((self.x, self.y))
+
+
+# --- Main Game Function ---
+def main():
+    """ The main loop for the game. """
+    # Create maze and player
+    maze = Maze(MAZE_WIDTH, MAZE_HEIGHT)
+    player = Player(maze.start_pos[0], maze.start_pos[1])
+
+    while (player.x, player.y) != maze.end_pos:
+        # Display the initial maze
+        maze.display(player, player.path)
+        print("\nUse W, A, S, D to move. Press 'q' to quit.")
+
+        move = get_char().lower()
+
+        if move in ['w', 'a', 's', 'd']:
+            player.move(move, maze)
+        elif move == 'q':
+            print("Quitting game.")
+            return
+
+    maze.display(player, player.path)
+    print("\nCongratulations! You solved the maze!")
+
+
+if __name__ == '__main__':
+    main()
 
 
 
